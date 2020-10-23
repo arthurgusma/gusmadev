@@ -1,3 +1,5 @@
+/* ~~~~~~~~~~ GENERAL ~~~~~~~~~~ */
+
 html {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -15,23 +17,35 @@ body {
   text-align: center;
 }
 
-
 h1 {
+  font-weight: 400;
+  font-weight: bold;
   margin: 5rem 0;
 }
 h2 {
-    margin: 5rem 0 0 0;
+  margin: 3rem 0 3rem;
 }
-img {
-    margin: 10rem 0;
+h2:first-child {
+  margin-top: 5rem;
+}
+
+p {
+  font-size: 2rem;
 }
 a {
   text-decoration: none;
   color: white;
 }
 
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+/* ~~~~~~~~~~ HOME CONTENT ~~~~~~~~~~ */
+
 .row-nav {
-    background-color: #ffcbcb;
+  background-color: #ffcbcb;
 }
 .container-top {
   background-color: #ffcbcb;
@@ -40,7 +54,6 @@ a {
 .navbar a {
   margin: 0 0.5rem;
   color: #000;
-  
 }
 
 .navbar-brand {
@@ -50,13 +63,14 @@ a {
 }
 
 #home {
-    height: 55rem;
+  height: 550px;
 }
 
 #home h1 {
   margin: 10rem 0 0 0;
   color: #132743;
   font-size: 7rem;
+  font-weight: normal;
 }
 
 #home p {
@@ -70,22 +84,41 @@ a {
   margin: 10rem auto;
 }
 
+/* ~~~~~~~~~~ BLOG CONTENT ~~~~~~~~~~ */
+
 #blog {
-    height: 55rem;
-}
-
-#projects {
-    height: 55rem;
-}
-
-#about {
-    height: 55rem;
+  height: 450px;
 }
 
 .container-mid {
   background-color: #1e5f74;
 }
 
+/* ~~~~~~~~~~ PROJETCS CONTENT ~~~~~~~~~~ */
+
+#projects {
+  height: 450px;
+}
+#projects p {
+  width: 350px;
+  margin-bottom: 3rem;
+}
+#projects img {
+  margin-top: 2.5rem;
+}
+/* ~~~~~~~~~~ ABOUT CONTENT ~~~~~~~~~~ */
+
+#about {
+  height: 550px;
+}
+
 .container-bottom {
   background-color: #132743;
+}
+
+/* ~~~~~~~~~~ FOOTER ~~~~~~~~~~ */
+
+footer p {
+  font-size: 1.2rem;
+  color: #d6d2c4;
 }
