@@ -23,8 +23,9 @@ h1 {
   margin: 5rem 0;
 }
 h2 {
-  margin: 3rem 0 3rem;
+  margin: 3rem 0 1.5rem;
 }
+
 h2:first-child {
   margin-top: 5rem;
 }
@@ -85,13 +86,24 @@ a {
 }
 
 /* ~~~~~~~~~~ BLOG CONTENT ~~~~~~~~~~ */
+.container-mid {
+  background-color: #1e5f74;
+}
 
 #blog {
   height: 450px;
 }
 
-.container-mid {
-  background-color: #1e5f74;
+#blog .btn {
+  margin-top: 2rem;
+}
+
+h2 a:hover {
+  color: #8bcdcd;
+}
+
+.journal p {
+  font-size: 1.5rem;
 }
 
 /* ~~~~~~~~~~ PROJETCS CONTENT ~~~~~~~~~~ */
