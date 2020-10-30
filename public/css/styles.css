@@ -98,6 +98,10 @@ a {
   margin-top: 2rem;
 }
 
+h2 a {
+  text-decoration: underline;
+}
+
 h2 a:hover {
   color: #8bcdcd;
 }
@@ -116,8 +120,23 @@ h2 a:hover {
   margin-bottom: 3rem;
 }
 #projects img {
-  margin-top: 2.5rem;
+  margin-top: 8rem;
+  height: 300px;
+  width: 45rem;
 }
+ #projects ul {
+   text-align: left;
+ }
+
+ #projects a {
+   margin: .5rem .5rem;
+
+ }
+
+ #projects li a:first-child {
+   margin-left: 8rem;
+ }
+
 /* ~~~~~~~~~~ ABOUT CONTENT ~~~~~~~~~~ */
 
 #about {
@@ -127,7 +146,9 @@ h2 a:hover {
 .container-bottom {
   background-color: #132743;
 }
-
+.eapps-link {
+  visibility: hidden !important;
+}
 /* ~~~~~~~~~~ FOOTER ~~~~~~~~~~ */
 
 footer p {
