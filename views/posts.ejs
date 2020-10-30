@@ -31,15 +31,16 @@
               </nav>
             </div>
           </div>
-        <div class="row justify-content-md-center">
-            <div class="col-lg-5">
-                <h1>POST TITLE</h1>
-                <P>dajshdiuashdaish</P>
-        
-            </div>
-            <div class="col-lg-5">
-               <img src="" alt="post img">
-            </div>
+  
+        </div>
+        <div class="row justify-content-md-center row-nav"> 
+          <div class="col-lg-10">
+            <% posts.forEach((post)=>{ %>
+            <h1><a href="/post/<%= post.title %>"><%= post.title %> </a></h1> 
+            <p> <%= post.content %> </p>
+            <% }) %>
+          </div>
+
         </div>
     </div>
 

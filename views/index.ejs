@@ -75,26 +75,16 @@
         <div class="col col-lg-5">
           <div class="div-pack journal">
             <% for (let i=0; i < 3; i++) { %>
-            <h2><a href="/posts/<%= posts[i].title %>"><%= posts[i].title %></a></h2>
-            <p><%= posts[i].content.substring(0,30) + " ..."%></p> 
+            <h2>
+              <a href="/post/<%= posts[i].title %>"><%= posts[i].title %></a>
+            </h2>
+            <p><%= posts[i].content.substring(0,30) + " ..."%></p>
             <% } %>
-           
           </div>
         </div>
       </div>
       <hr />
       <div id="projects" class="row justify-content-md-center">
-        <div class="col col-lg-5">
-          <div class="div-pack">
-            <h1>My Projects</h1>
-            <p>Here you'll see a list with my latest projects. Check it out!</p>
-            <ul>
-              <li><a href="">hasudh</a></li>
-              <li><a href="">hasudh</a></li>
-              <li><a href="">hasudh</a></li>
-            </ul>
-          </div>
-        </div>
         <div class="col col-lg-5">
           <div class="div-pack">
             <div
@@ -104,13 +94,13 @@
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="..." alt="Project img" />
+                  <img class="d-block" src="..." alt="Project img" />
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="..." alt="Project img" />
+                  <img class="d-block" src="..." alt="Project img" />
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="..." alt="Project img" />
+                  <img class="d-block" src="..." alt="Project img" />
                 </div>
               </div>
               <a
@@ -140,6 +130,41 @@
             </div>
           </div>
         </div>
+        <div class="col col-lg-5">
+          <div class="div-pack">
+            <h1>My Projects</h1>
+            <p>Here you'll see a list with my latest projects. Check it out!</p>
+            <ul>
+              <li>
+                TEST 0
+                <a class="btn btn-lg btn-success" href=""
+                  ><i class="fas fa-sign-in-alt"></i> Acces</a
+                >
+                <a class="btn btn-lg btn-dark" href=""
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </li>
+              <li>
+                TEST 1
+                <a class="btn btn-lg btn-success" href=""
+                  ><i class="fas fa-sign-in-alt"></i> Acces</a
+                >
+                <a class="btn btn-lg btn-dark" href=""
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </li>
+              <li>
+                TEST 2
+                <a class="btn btn-lg btn-success" href=""
+                  ><i class="fas fa-sign-in-alt"></i> Acces</a
+                >
+                <a class="btn btn-lg btn-dark" href=""
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -161,6 +186,9 @@
         <div class="col col-lg-5">
           <div class="div-pack">
             <h1>Instagram</h1>
+            <div
+              class="elfsight-app-6cc5ba3f-2262-47b4-8d5d-b6213c38f0b0"
+            ></div>
             <a
               href="https://www.linkedin.com/in/arthur-gusmao-13451017b/"
               target="_blank"
@@ -194,6 +222,7 @@
         </div>
       </div>
     </div>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
