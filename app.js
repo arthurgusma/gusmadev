@@ -1,9 +1,10 @@
 require('dotenv').config();
 const express = require('express');
-const bodyParser = require('body-parser');
 const ejs = require('ejs');
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const _ = require('lodash');
+
 
 const app = express();
 
@@ -14,9 +15,8 @@ const Post = mongoose.model('Post', postSchema);
 
 
 app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
-app.use(express.static('public'));
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(express.static("public"));
 
 app.route('/')
   .get((req, res) => {
@@ -47,9 +47,10 @@ app.get('/post/:id', (req, res) => {
   const id = req.params.id;
   Post.findOne({ title: id }, (err, post) => {
     if (!err) {
-      res.render('/post', { title: post.title, body: post.content });
+      res.render('post', { title: post.title, body: post.content });
     } else {
       console.log(err);
+      res.redirect('/')
     }
   })
 
@@ -63,7 +64,7 @@ app.route('/login')
 
 app.route('/adm')
   .get((req, res) => {
-    res.render('/adm');
+    res.render('adm');
   });
 
 app.route('/user')
