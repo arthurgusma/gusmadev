@@ -1,25 +1,14 @@
 /* ~~~~~~~~~~ GENERAL ~~~~~~~~~~ */
-
-h2 {
-  margin: 3rem 0 1.5rem;
+body {
+  color: white;
 }
 
-h2:first-child {
-  margin-top: 5rem;
-}
-
-p {
-  font-size: 2rem;
-}
 a {
   text-decoration: none;
   color: white;
 }
 
-.col {
-  display: flex;
-  justify-content: center;
-}
+
 
 /* ~~~~~~~~~~ HOME CONTENT ~~~~~~~~~~ */
 
@@ -28,17 +17,6 @@ a {
 }
 .container-top {
   background-color: #ffcbcb;
-}
-
-.navbar a {
-  margin: 0 0.5rem;
-  color: #000;
-}
-
-.navbar-brand {
-  font-weight: 600;
-  font-weight: bold;
-  font-size: 2rem;
 }
 
 #home {
