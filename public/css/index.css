@@ -28,6 +28,7 @@ a {
   color: #132743;
   font-size: 7rem;
   font-weight: normal;
+  text-shadow: 8px 5px 5px #aa3a3a;
 }
 
 #home p {
@@ -80,9 +81,7 @@ h2 a:hover {
   height: 300px;
   width: 45rem;
 }
- #projects ul {
-   text-align: left;
- }
+
 
  #projects a {
    margin: .5rem .5rem;
@@ -102,9 +101,7 @@ h2 a:hover {
 .container-bottom {
   background-color: #132743;
 }
-.eapps-link {
-  visibility: hidden !important;
-}
+
 /* ~~~~~~~~~~ FOOTER ~~~~~~~~~~ */
 
 footer p {
