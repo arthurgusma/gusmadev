@@ -1,31 +1,34 @@
 /* ~~~~~~~~~~ GENERAL ~~~~~~~~~~ */
 body {
-  color: white;
+  color: #FFFFFF;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
 }
-
-
 
 /* ~~~~~~~~~~ HOME CONTENT ~~~~~~~~~~ */
 
-.row-nav {
-  background-color: #ffcbcb;
-}
+
 .container-top {
-  background-color: #ffcbcb;
+  height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.row-nav {
+  padding-bottom: 3rem;
 }
 
 #home {
-  height: 550px;
+  background-image: url(../images/backgroundCode.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 #home h1 {
   margin: 10rem 0 0 0;
-  color: #132743;
   font-size: 7rem;
   font-weight: normal;
   text-shadow: 8px 5px 5px #aa3a3a;
@@ -34,12 +37,16 @@ a {
 #home p {
   margin: 0 0 0 45rem;
   font-size: 2.5rem;
-  color: #407088;
 }
 
 #home p + p {
-  color: #132743;
   margin: 10rem auto;
+}
+
+.fa-angle-double-down {
+  color: #1e5f74;
+  font-size: 3rem;
+  margin-top: 3rem;
 }
 
 /* ~~~~~~~~~~ BLOG CONTENT ~~~~~~~~~~ */
