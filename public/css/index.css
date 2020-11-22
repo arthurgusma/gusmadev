@@ -108,6 +108,9 @@ h2 a:hover {
   background-color: #132743;
 }
 
+#about a {
+  margin: 2rem .5rem;
+}
 /* ~~~~~~~~~~ FOOTER ~~~~~~~~~~ */
 
 footer p {
