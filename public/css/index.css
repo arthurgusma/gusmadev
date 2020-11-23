@@ -84,9 +84,9 @@ h2 a:hover {
   margin-bottom: 3rem;
 }
 #projects img {
-  margin-top: 8rem;
+  margin-top: 4rem;
   height: 300px;
-  width: 45rem;
+  width: 100%;
 }
 
  #projects a {
