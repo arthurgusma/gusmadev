@@ -16,7 +16,7 @@ const Post = mongoose.model('Post', postSchema);
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(express.static("public"));
+app.use('/public', express.static("public"));
 
 app.route('/')
   .get((req, res) => {
@@ -45,20 +45,20 @@ app.route('/posts')
     const searchTopic = req.body.topic;
     Post.find(
       { $or: [{ title: { $regex: _.lowerCase(searchTopic) } },
-       { content: { $regex: _.lowerCase(searchTopic) } }, 
-       { title: { $regex: _.upperFirst(searchTopic) } }, 
-       { content: { $regex:  _.upperFirst(searchTopic) } }] },
-        (err, posts) => {
-      if (!err) {
-        res.render('posts', { posts: posts });
-      } else {
-        console.log(err)
-      }
-    })
+        { content: { $regex: _.lowerCase(searchTopic) } },
+        { title: { $regex: _.upperFirst(searchTopic) } },
+        { content: { $regex:  _.upperFirst(searchTopic) } }] },
+      (err, posts) => {
+        if (!err) {
+          res.render('posts', { posts: posts });
+        } else {
+          console.log(err)
+        }
+      })
     console.log(searchTopic);
   });
 
-app.get('/post/:id', (req, res) => {
+app.get('/read/:id', (req, res) => {
   const id = req.params.id;
   Post.findOne({ title: id }, (err, post) => {
     if (!err) {

@@ -1,4 +1,7 @@
-/* ~~~~~~~~~~ GENERAL ~~~~~~~~~~ */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   font-family: "Roboto", sans-serif;
@@ -35,21 +38,28 @@ p {
 
 /* ~~~~~~~~~~ NAVBAR ~~~~~~~~~~ */
 
-.navbar a {
-  margin: 0 0.5rem;
-  color: #000;
-}
-
 .navbar-brand {
   font-weight: 600;
   font-weight: bold;
   font-size: 2rem;
 }
 
+.navbar ul {
+  margin: .5rem 0 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.navbar a {
+  color: #000;
+}
+
 /* ~~~~~~~~~~ FOOTER ~~~~~~~~~~ */
 
 footer p {
-    font-size: 1.2rem;
-    color: #d6d2c4;
-  }
-  
+  font-size: 1.2rem;
+  color: #d6d2c4;
+}
