@@ -11,7 +11,7 @@ a {
 
 
 .container-top {
-  height: 650px;
+  min-height: 650px;
   background-color: #FFFFFF;
 }
 
@@ -54,7 +54,7 @@ a {
 }
 
 #blog {
-  height: 450px;
+  min-height: 450px;
 }
 
 #blog .btn {
@@ -76,7 +76,7 @@ h2 a:hover {
 /* ~~~~~~~~~~ PROJETCS CONTENT ~~~~~~~~~~ */
 
 #projects {
-  height: 450px;
+  min-height: 450px;
 }
 #projects p {
   margin-bottom: 3rem;
@@ -99,7 +99,7 @@ h2 a:hover {
 /* ~~~~~~~~~~ ABOUT CONTENT ~~~~~~~~~~ */
 
 #about {
-  height: 550px;
+  min-height: 600px;
 }
 
 .container-bottom {
@@ -114,4 +114,25 @@ h2 a:hover {
 footer p {
   font-size: 1.2rem;
   color: #d6d2c4;
+}
+
+/* ~~~~~~~~~~ MEDIA QUERY ~~~~~~~~~~ */
+
+@media (max-width: 770px) {
+  .fa-angle-double-down {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 580px) {
+  #home p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 470px) {
+  #home h1 {
+    font-size: 5rem;
+  }
 }
