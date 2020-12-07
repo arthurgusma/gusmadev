@@ -8,11 +8,10 @@ const _ = require('lodash');
 
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/testBlog', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://' + process.env.DB_USER + ':' + process.env.DB_PASS + '@cluster0.1865l.mongodb.net/<dbname>?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const postSchema = new mongoose.Schema({ title: String, content: String, image: Buffer });
 const Post = mongoose.model('Post', postSchema);
-
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -44,10 +43,12 @@ app.route('/posts')
   .post((req, res) => {
     const searchTopic = req.body.topic;
     Post.find(
-      { $or: [{ title: { $regex: _.lowerCase(searchTopic) } },
+      {
+        $or: [{ title: { $regex: _.lowerCase(searchTopic) } },
         { content: { $regex: _.lowerCase(searchTopic) } },
         { title: { $regex: _.upperFirst(searchTopic) } },
-        { content: { $regex:  _.upperFirst(searchTopic) } }] },
+        { content: { $regex: _.upperFirst(searchTopic) } }]
+      },
       (err, posts) => {
         if (!err) {
           res.render('posts', { posts: posts });
@@ -55,7 +56,6 @@ app.route('/posts')
           console.log(err)
         }
       })
-    console.log(searchTopic);
   });
 
 app.get('/read/:id', (req, res) => {
