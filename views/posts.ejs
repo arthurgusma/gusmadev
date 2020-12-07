@@ -14,7 +14,7 @@
   <div class="col-lg-5 overflow-auto">
     <% posts.forEach((post)=>{ %>
     <h2><a href="/read/<%= post.title %>"><%= post.title %> </a></h2>
-    <p><%= post.content %></p>
+    <p><%= post.content.substring(0,50) + " ..." %></p>
     <% }) %>
   </div>
 </div>
