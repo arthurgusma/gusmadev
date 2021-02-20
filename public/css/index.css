@@ -92,8 +92,12 @@ h2 a:hover {
 
  }
 
+ #projects ul {
+   list-style-type: none;
+ }
+
  #projects li a:first-child {
-   margin-left: 8rem;
+   margin-left: 2rem;
  }
 
 /* ~~~~~~~~~~ ABOUT CONTENT ~~~~~~~~~~ */
