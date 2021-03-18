@@ -78,11 +78,20 @@ h2 a:hover {
 #projects {
   min-height: 450px;
 }
+
+
+#projects h1 {
+  margin: 0 auto 3rem;
+}
+
+#projects .col-mid-5 {
+  margin: 3rem auto;
+}
 #projects p {
   margin-bottom: 3rem;
 }
 #projects img {
-  margin-top: 4rem;
+  margin-top: 6rem;
   height: 300px;
   width: 100%;
 }
@@ -98,6 +107,14 @@ h2 a:hover {
 
  #projects li a:first-child {
    margin-left: 2rem;
+ }
+
+ #projects li p {
+   margin: 0;
+ }
+
+ #projects li a {
+   margin-bottom: 2rem;
  }
 
 /* ~~~~~~~~~~ ABOUT CONTENT ~~~~~~~~~~ */
