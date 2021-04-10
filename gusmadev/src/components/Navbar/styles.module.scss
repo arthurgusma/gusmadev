@@ -1,0 +1,28 @@
+.container {
+  color: var(--black);
+
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+
+    & b {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    & a {
+      padding: 1rem 0.5rem;
+    }
+
+    & ul {
+      display: flex;
+
+      & li {
+        display: inline-block;
+        margin-left: 1rem;
+      }
+    }
+  }
+}

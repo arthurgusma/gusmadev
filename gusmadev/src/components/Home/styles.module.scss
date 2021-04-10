@@ -1,0 +1,25 @@
+.container {
+  min-height: 500px;
+  color: var(--white);
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(../../../public/images/backgroundCode.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & h1 {
+    font-size: 5rem;
+    text-shadow: 8px 5px 5px var(--title-shadow);
+  }
+  
+  & p:first-of-type {
+   text-align: right;
+  }
+  p:last-child {
+    margin-top: 5rem;
+  }
+}
