@@ -36,6 +36,7 @@ textarea,
 button,
 select {
   font:  1rem 'Roboto', sans-serif;
+  line-height: 1.6;
 }
 
 button {
@@ -45,4 +46,8 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul {
+  list-style-type: none;
 }

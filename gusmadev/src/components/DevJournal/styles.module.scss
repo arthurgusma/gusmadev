@@ -1,0 +1,22 @@
+.container {
+  background: var(--background-blue);
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  text-align: center;
+  color: var(--white);
+  min-height: 400px;
+}
+
+.description {
+  margin: 5rem auto;
+  width: 50%;
+
+  & a {
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--subtitle-hover-blue);
+    }
+  }
+}

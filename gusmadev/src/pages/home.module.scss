@@ -1,4 +1,15 @@
 .container {
   max-width: 1120px;
   margin: 0 auto;
+
+  & p {
+    padding: 0 3rem;
+    font-size: 1.2rem;
+  }
+
+  & h1,
+  h2,
+  p {
+    margin-bottom: 1.5rem;
+  }
 }

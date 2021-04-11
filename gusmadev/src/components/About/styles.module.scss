@@ -1,0 +1,18 @@
+.container {
+  background: var(--background-blue-darker);
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  text-align: center;
+  color: var(--white);
+}
+
+.content {
+  margin: 5rem auto;
+  width: 50%;
+}
+
+.instagram {
+  height: 90%;
+  width: 90%;
+}

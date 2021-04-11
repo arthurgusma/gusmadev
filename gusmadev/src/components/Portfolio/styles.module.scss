@@ -1,0 +1,21 @@
+.container {
+  background: var(--background-blue);
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  text-align: center;
+  color: var(--white);
+  min-height: 500px;
+
+  border-top: 1px solid var(--background-blue-darker)
+}
+
+.description {
+  margin: 5rem auto;
+  width: 50%;
+}
+
+.carousel {
+  margin: 5rem auto;
+  width: 50%;
+}

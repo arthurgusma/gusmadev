@@ -1,0 +1,11 @@
+.container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: var(--background-blue);
+     & p {
+           margin: 0;
+           font-size: 1rem;
+     }
+}
