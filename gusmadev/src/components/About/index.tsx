@@ -1,5 +1,11 @@
 import styles from './styles.module.scss';
 
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiOutlineInstagram,
+} from 'react-icons/ai';
+
 export function About() {
   return (
     <div id='about' className={styles.container}>
@@ -13,27 +19,35 @@ export function About() {
             practice a little more on my skils (wich I'm always developing). You
             can check here all my medias and all the places you can contact me.
           </p>
-          <a
-            href='https://www.linkedin.com/in/arthur-gusmao-13451017b/'
-            target='_blank'
-            type='button'
-          >
-            <i></i> Linkedin
-          </a>
-          <a
-            type='button'
-            href='https://github.com/arthurgusma'
-            target='_blank'
-          >
-            <i></i> GitHub
-          </a>
-          <a
-            type='button'
-            href='https://www.instagram.com/gusmadev/'
-            target='_blank'
-          >
-            <i></i> Instagram
-          </a>
+          <button className={`${styles.linkedinBtn} button`}>
+            <a
+              href='https://www.linkedin.com/in/arthur-gusmao-13451017b/'
+              target='_blank'
+              type='button'
+            >
+              <AiFillLinkedin /> Linkedin
+            </a>
+          </button>
+
+          <button className={`${styles.githubBtn} button`}>
+            <a
+              type='button'
+              href='https://github.com/arthurgusma'
+              target='_blank'
+            >
+              <AiFillGithub /> GitHub
+            </a>
+          </button>
+
+          <button className={`${styles.instagramBtn} button`}>
+            <a
+              type='button'
+              href='https://www.instagram.com/gusmadev/'
+              target='_blank'
+            >
+              <AiOutlineInstagram /> Instagram
+            </a>
+          </button>
         </div>
       </div>
       <div className={styles.content}>

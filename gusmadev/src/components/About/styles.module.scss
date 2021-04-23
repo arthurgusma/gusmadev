@@ -12,6 +12,27 @@
   width: 50%;
 }
 
+.linkedinBtn {
+  &:hover {
+    background: var(--linkeding-blue);
+    color: var(--white);
+  }
+}
+
+.githubBtn {
+  &:hover {
+    background: var(--gray-button);
+    color: var(--white);
+  }
+}
+
+.instagramBtn {
+  &:hover {
+    background: var(--instagram-pink);
+    color: var(--white);
+  }
+}
+
 .instagram {
   height: 90%;
   width: 90%;
