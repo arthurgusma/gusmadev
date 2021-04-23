@@ -7,15 +7,41 @@
   color: var(--white);
   min-height: 500px;
 
-  border-top: 1px solid var(--background-blue-darker)
+  border-top: 1px solid var(--background-blue-darker);
 }
 
 .description {
   margin: 5rem auto;
   width: 50%;
+
+  & li p {
+    margin: 0;
+  }
+
+  & button {
+    margin: 0 1rem 2rem 1rem;
+  }
 }
 
 .carousel {
   margin: 5rem auto;
   width: 50%;
+}
+
+.greenButton {
+  background: var(--green-button);
+  color: var(--white);
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.grayButton {
+  background: var(--gray-button);
+  color: var(--white);
+
+  &:hover {
+    opacity: .9;
+  }
 }

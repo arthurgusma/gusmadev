@@ -1,6 +1,8 @@
 import { MyCarousel } from '../Carousel';
 import styles from './styles.module.scss';
 
+import { ImEnter, ImGithub } from 'react-icons/im';
+
 export function Portfolio() {
   return (
     <div id='projects' className={styles.container}>
@@ -10,27 +12,35 @@ export function Portfolio() {
         <ul>
           <li>
             <p>Quem Paga a Conta?</p>
-            <a target='_blank' href='https://quem-paga-conta.herokuapp.com/'>
-              <i>Acces</i>
-            </a>
-            <a
-              target='_blank'
-              href='https://github.com/arthurgusma/quem-paga-conta'
-            >
-              <i>GitHub</i>
-            </a>
+            <button className={`${styles.greenButton} button`}>
+              <a target='_blank' href='https://quem-paga-conta.herokuapp.com/'>
+                <ImEnter /> Acess
+              </a>
+            </button>
+            <button className={`${styles.grayButton} button`}>
+              <a
+                target='_blank'
+                href='https://github.com/arthurgusma/quem-paga-conta'
+              >
+                <ImGithub /> Github
+              </a>
+            </button>
           </li>
           <li>
             <p>TradeMap Ações</p>
-            <a target='_blank' href='https://trademap-acoes.vercel.app/'>
-              <i>Acces</i>
-            </a>
-            <a
-              target='_blank'
-              href='https://github.com/arthurgusma/desafio-frontend'
-            >
-              <i>GitHub</i>
-            </a>
+            <button className={`${styles.greenButton} button`}>
+              <a target='_blank' href='https://trademap-acoes.vercel.app/'>
+                <ImEnter /> Acess
+              </a>
+            </button>
+            <button className={`${styles.grayButton} button`}>
+              <a
+                target='_blank'
+                href='https://github.com/arthurgusma/desafio-frontend'
+              >
+                <ImGithub /> Github
+              </a>
+            </button>
           </li>
         </ul>
       </div>

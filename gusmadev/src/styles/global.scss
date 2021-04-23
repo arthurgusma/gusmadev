@@ -12,6 +12,8 @@
   --subtitle-hover-blue: #8bcdcd;
   --black: rgb(0, 0, 0);
   --white: #fff;
+  --green-button: #28a745;
+  --gray-button: #343a40;
 }
 
 @media (max-width: 1080px) {
@@ -50,4 +52,13 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+
+.button {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
 }

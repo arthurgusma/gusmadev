@@ -9,7 +9,9 @@ export function DevJournal() {
           This is my my personal blog, here I'll make posts about what i'm
           learning and any tech topics that I find intersting to publush.
         </p>
-        <a href='/posts'>See all the posts</a>
+        <button className={`${styles.descriptionButton} button`}>
+          <a href='/posts'>See all posts</a>
+        </button>
       </div>
       <div className={styles.description}>
         <ul>

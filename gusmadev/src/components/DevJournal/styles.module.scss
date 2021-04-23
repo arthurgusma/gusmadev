@@ -12,11 +12,31 @@
   margin: 5rem auto;
   width: 50%;
 
+  & button {
+    padding: 0.2rem;
+  }
+
   & a {
     text-decoration: underline;
-
     &:hover {
       color: var(--subtitle-hover-blue);
+    }
+  }
+}
+
+.descriptionButton {
+
+  &:hover {
+    color: var(--white);
+    opacity: .9;
+  }
+
+  & a {
+    text-decoration: none;
+    color: var(--black);
+
+    &:hover {
+      color: var(--black);
     }
   }
 }
