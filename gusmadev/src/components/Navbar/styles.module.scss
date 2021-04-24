@@ -6,6 +6,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0;
+    max-width: 1120px;
+    margin: 0 auto;
 
     & b {
       font-weight: bold;
@@ -23,6 +25,14 @@
         display: inline-block;
         margin-left: 1rem;
       }
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .container {
+    & nav {
+      margin: 0 1rem;
     }
   }
 }

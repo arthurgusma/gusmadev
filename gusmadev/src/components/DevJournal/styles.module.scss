@@ -1,11 +1,17 @@
 .container {
   background: var(--background-blue);
+  color: var(--white);
+  min-height: 400px;
+}
+
+.containerWrapper {
   display: flex;
   justify-content: space-around;
   align-items: top;
   text-align: center;
-  color: var(--white);
-  min-height: 400px;
+
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 .description {
@@ -38,5 +44,21 @@
     &:hover {
       color: var(--black);
     }
+  }
+}
+
+@media (max-width: 890px) {
+  .container {
+    & p {
+      padding: 0;
+    }
+  }
+  .containerWrapper {
+    display: grid;
+  }
+
+  .description {
+    margin: 1rem auto;
+    width: 80%;
   }
 }
