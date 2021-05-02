@@ -24,3 +24,10 @@
     border-radius: 1rem;
   }
 }
+
+@media (max-width: 470px) {
+  .carouselCard {
+    height: 150px;
+    width: 200px;
+  }
+}

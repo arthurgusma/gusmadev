@@ -22,7 +22,7 @@
   & h1 {
     font-size: 5rem;
     text-shadow: 8px 5px 5px var(--title-shadow);
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   & p:first-of-type {
@@ -32,5 +32,13 @@
   }
   p:last-child {
     margin-top: 3rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .contentWrapper {
+    & h1 {
+      font-size: 4rem;
+    }
   }
 }
