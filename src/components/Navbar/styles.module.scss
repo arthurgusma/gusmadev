@@ -1,0 +1,42 @@
+.container {
+  position: sticky;
+  top: 0;
+  background: var(--background);
+  color: var(--black);
+  z-index: 999;
+
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0;
+    max-width: 1120px;
+    margin: 0 auto;
+
+    & b {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    & a {
+      padding: 1rem 0.5rem;
+    }
+
+    & ul {
+      display: flex;
+
+      & li {
+        display: inline-block;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .container {
+    & nav {
+      margin: 0 1rem;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #ffffff;
+  --background-blue: #1e5f74;
+  --background-blue-darker: #132743;
+  --background-blue-footer: #0f1f35; 
+  --title-shadow: #aa3a3a;
+  --subtitle-hover-blue: #8bcdcd;
+  --black: rgb(0, 0, 0);
+  --white: #fff;
+  --green-button: #28a745;
+  --gray-button: #343a40;
+
+  --linkeding-blue: #0e76a8;
+  --instagram-pink: #E1306C;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--background);
+}
+
+body,
+input,
+textarea,
+button,
+select {
+  font:  1rem 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+}

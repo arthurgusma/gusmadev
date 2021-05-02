@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: middle;
+}
+
+.carouselCard {
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  background: #52c0f5;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 10px;
+
+  & img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .carouselCard {
+    height: 150px;
+    width: 200px;
+  }
+}

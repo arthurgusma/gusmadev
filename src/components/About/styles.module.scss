@@ -1,0 +1,69 @@
+.container {
+  background: var(--background-blue-darker);
+  color: var(--white);
+
+  & p {
+    text-align: left;
+  }
+}
+
+.contentWrapper {
+  max-width: 1120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 5rem auto;
+  width: 50%;
+}
+
+.linkedinBtn {
+  &:hover {
+    background: var(--linkeding-blue);
+    color: var(--white);
+  }
+}
+
+.githubBtn {
+  &:hover {
+    background: var(--gray-button);
+    color: var(--white);
+  }
+}
+
+.instagramBtn {
+  &:hover {
+    background: var(--instagram-pink);
+    color: var(--white);
+  }
+}
+
+.instagram {
+  height: 90%;
+  width: 90%;
+}
+
+@media (max-width: 890px) {
+  .container {
+    & p {
+      padding: 0;
+    }
+  }
+  .contentWrapper {
+    display: grid;
+  }
+
+  .content {
+    margin: 1rem auto;
+    width: 80%;
+  }
+
+  .instagram {
+    height: 100%;
+    width: 100%;
+  }
+}
