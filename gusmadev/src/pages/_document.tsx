@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
         <Head>
           <link rel='icon' type='/public/image/jpg' href='images/icon.jpg' />
           <link
-            href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;2,500&display=swap'
             rel='stylesheet'
           />
           <link rel='shortcut icon' href='/icon.jpg' type='image/jpg' />

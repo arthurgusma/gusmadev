@@ -1,11 +1,15 @@
 .container {
+  position: sticky;
+  top: 0;
+  background: var(--background);
   color: var(--black);
+  z-index: 999;
 
   & nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: .5rem 0;
     max-width: 1120px;
     margin: 0 auto;
 

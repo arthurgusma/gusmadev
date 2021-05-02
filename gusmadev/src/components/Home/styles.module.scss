@@ -22,12 +22,15 @@
   & h1 {
     font-size: 5rem;
     text-shadow: 8px 5px 5px var(--title-shadow);
+    margin-bottom: .5rem;
   }
 
   & p:first-of-type {
     text-align: right;
+    font-weight: bold;
+    font-size: 1.5rem;
   }
   p:last-child {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }

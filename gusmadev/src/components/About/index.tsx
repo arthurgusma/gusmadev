@@ -12,14 +12,17 @@ export function About() {
       <div className={styles.contentWrapper}>
         <div className={styles.content}>
           <div>
-            <h1>Hello, world!</h1>
+            <h1>"Hello, world!"</h1>
             <p>
-              Hi there! I'm Arthur, a full stack developer. I love to code since
+              Hi there! I'm Arthur, a Front-End Developer. I love coding since
               my first "Hello, world". I created this website from scratch to
-              show a part of my knowloweg in web development, also to have fun
-              and practice a little more on my skils (wich I'm always
-              developing). You can check here all my medias and all the places
-              you can contact me.
+              show a part of my knowledge by displaying my projects and also to
+              have some fun. I'm always learning something new and improving my
+              skills.
+            </p>
+            <p>
+              You can check here all my medias and the places you can contact
+              me:
             </p>
             <button className={`${styles.linkedinBtn} button`}>
               <a

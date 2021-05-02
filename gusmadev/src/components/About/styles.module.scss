@@ -1,6 +1,10 @@
 .container {
   background: var(--background-blue-darker);
   color: var(--white);
+
+  & p {
+    text-align: left;
+  }
 }
 
 .contentWrapper {
