@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <div className={styles.container}>
       <footer>
-        <p>
+        <p className={styles.footerP}>
           Arthur Gusmao <AiOutlineCopyrightCircle /> {currentYear}
         </p>
       </footer>

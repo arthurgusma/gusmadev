@@ -5,6 +5,10 @@
   & p {
     text-align: left;
   }
+
+  & button {
+    background: var(--background);
+  }
 }
 
 .contentWrapper {
