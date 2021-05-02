@@ -23,11 +23,11 @@
     font-size: 5rem;
     text-shadow: 8px 5px 5px var(--title-shadow);
     margin-bottom: 0.5rem;
+    font-weight: normal;
   }
 
   & p:first-of-type {
     text-align: right;
-    font-weight: bold;
     font-size: 1.5rem;
   }
   p:last-child {
